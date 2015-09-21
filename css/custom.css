@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+.btn-primary:active,.btn-primary:focus {
+  background: #fff;
+}
+*/
+
+img.logo {
+    width: 24px;
+    margin: 0 10px 0;
+}
+
+.logos-item{
+	min-height:300px;
+}
+
+.heading__sub {
+    font-size: 20px;
+}
+
+.pricing-item__title {
+    min-height: 50px;
+}
+.pricing-item__body {
+    min-height: 160px;
+}
+
+.team-member__avatar {
+    max-width: 80%;
+}
+
+.padding-bottom{
+	padding-bottom: 60px;
+}
+
+/* XS */
+@media (max-width:767px){
+	.col-xs-margin-top {
+		padding-top: 60px !important;
+	}
+}
+
+/* SM */
+@media (min-width:768px) and (max-width:991px){
+	.col-sm-margin-top {
+		padding-top: 160px !important;
+	}
+	
+	.team-member__avatar {
+		max-width: 50%;
+	}
+}
+
+/* MD & LG */
+@media (min-width:992px){
+	.col-md-margin-top {
+		padding-top: 110px !important;
+	}
+	.heading__sub {
+		font-size: 24px;
+	}
+	
+}
+
+
