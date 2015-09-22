@@ -6,7 +6,7 @@
 function menuClick(){
 	var $this = $(this).closest('.navbar-collapse');
 	//console.log('click');
-	console.log($this.get(0));
+	//console.log($this.get(0));
 	$this.removeClass('in');
 }
 
@@ -20,7 +20,9 @@ $(window).load(function() {
     setTimeout(function() {
         $('.preloader').addClass('active').delay(1000).fadeOut(500);
     }, 1000);
-
+	
+	//$('.default-click').trigger('click');
+	//$('.btn-filter:first').trigger('click');
 });
 
 

@@ -6620,10 +6620,10 @@ button.close {
 .btn-primary {
   border-radius: 0;
   border: 2px solid white;
-  background: transparent;
+  /*background: transparent;*/
   color: white;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   -webkit-transition: border-color 0.3s, color 0.3s;
   -o-transition: border-color 0.3s, color 0.3s;
@@ -6649,7 +6649,8 @@ button.close {
 .btn-primary:active,
 .btn-primary:active:focus {
   border-color: #fcae11;
-  background: transparent;
+  /*background: transparent;*/
+  background: #fff;
   color: #fcae11;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -6678,7 +6679,7 @@ button.close {
 \* -------------------- */
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 /**
