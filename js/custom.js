@@ -1,3 +1,4 @@
+var docState={sh:null};
 
 /* -------------------- *\
     #PRELOADER
@@ -8,6 +9,32 @@ function menuClick(){
 	//console.log('click');
 	//console.log($this.get(0));
 	$this.removeClass('in');
+}
+
+function windowResize(){
+	// Замер высоты
+	var xs = 400,
+	 sm = 768,
+	 md = 900,
+	 lg = 1200;
+	 
+	var h=$(window).height();
+	//console.log(h);
+	var diff={was:docState.sh, now:null, found:false};
+	if(h<xs) diff.now='h-xs';
+	else if(h<=sm) diff.now='h-sm';
+	else if(h<=md) diff.now='h-md';
+	else if(h<=lg) diff.now='h-lg';
+	else diff.now='h-xl';
+	
+	if(diff.now!=diff.was) {
+		diff.found=true;
+		docState.sh=diff.now;
+	}
+	console.log(diff);
+	if(diff.found){
+		$('.window-resize').removeClass(diff.was).addClass(diff.now);
+	}
 }
 
 $(document).ready(function(){
@@ -23,8 +50,11 @@ $(window).load(function() {
 	
 	//$('.default-click').trigger('click');
 	//$('.btn-filter:first').trigger('click');
+	
+	windowResize();
 });
 
+$(window).resize(windowResize);
 
 /* -------------------- *\
     #SIDEBAR
