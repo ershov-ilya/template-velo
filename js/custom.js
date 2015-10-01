@@ -1,4 +1,4 @@
-var docState={sh:null};
+п»їvar docState={sh:null};
 
 /* -------------------- *\
     #PRELOADER
@@ -12,7 +12,7 @@ function menuClick(){
 }
 
 function windowResize(){
-	// Замер высоты
+	// Р—Р°РјРµСЂ РІС‹СЃРѕС‚С‹
 	var xs = 400,
 	 sm = 768,
 	 md = 900,
