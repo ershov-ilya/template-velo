@@ -20,7 +20,7 @@ function windowResize(){
 	 
 	var h=$(window).height();
 	//console.log(h);
-	var diff={was:docState.sh, now:null, found:false};
+	var diff={was:docState.sh, now:null, changes:false};
 	if(h<xs) diff.now='h-xs';
 	else if(h<=sm) diff.now='h-sm';
 	else if(h<=md) diff.now='h-md';
@@ -28,12 +28,13 @@ function windowResize(){
 	else diff.now='h-xl';
 	
 	if(diff.now!=diff.was) {
-		diff.found=true;
+		diff.changes=true;
 		docState.sh=diff.now;
 	}
 	console.log(diff);
-	if(diff.found){
+	if(diff.changes){
 		$('.window-resize').removeClass(diff.was).addClass(diff.now);
+        diff.changes=false;
 	}
 }
 
