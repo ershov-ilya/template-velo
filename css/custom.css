@@ -58,6 +58,10 @@ img.logo {
 	.team-member__avatar {
 		width: 80%;
 	}
+
+    .navbar-right > li {
+        padding-left: 60px;
+    }
 }
 
 /* XS || SM */
@@ -76,6 +80,17 @@ img.logo {
 	}
 }
 
+
+/* MD */
+@media (min-width:992px) and (max-width:1199px) {
+    .navbar-nav > li > a {
+        font-size: 13px;
+    }
+    .team-member__avatar {
+        width: 70%;
+    }
+}
+
 /* MD || LG */
 @media (min-width:992px){
 /*
@@ -91,14 +106,19 @@ img.logo {
 		font-size: 18px;
 	}
 
-	.navbar-nav > li > a {
-		font-size: 16px;
-	}
+    .navbar__initial {
+        padding-top: 20px;
+        background: transparent !important;
+    }
 }
 
 /* LG */
 @media (min-width:1200px){
+    .navbar-nav > li > a {
+        font-size: 16px;
+    }
 }
+
 
 /*
 if(h<xs) diff.now='h-xs';
@@ -108,8 +128,27 @@ else if(h<=lg) diff.now='h-lg';
 else diff.now='h-xl';
 */
 
-.screen-container.h-lg{
+.screen-container.h-xs{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.screen-container.h-sm{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.screen-container.h-md{
     padding-top: 200px;
     padding-bottom: 80px;
 }
 
+.screen-container.h-lg{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.screen-container.h-xl{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
