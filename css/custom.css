@@ -47,9 +47,11 @@ img.logo {
 
 /* XS */
 @media (max-width:767px){
+/*
 	.col-xs-margin-top {
 		padding-top: 80px !important;
 	}
+*/
 	.navbar-nav > li > a {
 		font-size: 16px;
 	}
@@ -64,9 +66,11 @@ img.logo {
 
 /* SM */
 @media (min-width:768px) and (max-width:991px){
+/*
 	.col-sm-margin-top {
 		padding-top: 160px !important;
 	}
+*/
 	.team-member__avatar {
 		width: 70%;
 	}
@@ -74,9 +78,11 @@ img.logo {
 
 /* MD || LG */
 @media (min-width:992px){
+/*
 	.col-md-margin-top {
 		padding-top: 110px !important;
 	}
+*/
 	.heading__sub {
 		font-size: 24px;
 	}
@@ -94,4 +100,16 @@ img.logo {
 @media (min-width:1200px){
 }
 
+/*
+if(h<xs) diff.now='h-xs';
+else if(h<=sm) diff.now='h-sm';
+else if(h<=md) diff.now='h-md';
+else if(h<=lg) diff.now='h-lg';
+else diff.now='h-xl';
+*/
+
+.screen-container.h-lg{
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
 

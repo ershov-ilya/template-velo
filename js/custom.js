@@ -28,10 +28,9 @@ function windowResize(){
 	else diff.now='h-xl';
 	
 	if(diff.now!=diff.was) {
-		diff.changes=true;
+        diff.changes=true;
 		docState.sh=diff.now;
 	}
-	console.log(diff);
 	if(diff.changes){
 		$('.window-resize').removeClass(diff.was).addClass(diff.now);
         diff.changes=false;
